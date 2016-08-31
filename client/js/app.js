@@ -13,7 +13,7 @@ angular.module('coffeeShopApp', ['lbServices','ngRoute'])
 		controller: 'AuthLoginCtrl'
 	})
 	.when('/logout', {
-		templateUrl: '/templates/sign-up.html',
+		templateUrl: '/templates/home.html',
 		controller: 'AuthLogoutCtrl'
 	})
 	.when('/signup', {
