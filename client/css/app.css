@@ -63,6 +63,13 @@ footer p {
 	color: white;
 }
 
+.avatar {
+	float: left;
+	border-radius: 100%;
+	width: 50px;
+	height: 100%;
+}
+
 @media (max-width: 1300px) {
 
     .shop-img {
