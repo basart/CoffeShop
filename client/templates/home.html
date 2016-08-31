@@ -1,0 +1,11 @@
+<section class="shop">
+	<div ng-repeat="coffeeShop in coffeeShops" >
+		<div class="shop-info">
+			<p ng-bind="coffeeShop.name"></p>
+		</div>
+		<div class="shop-img">
+			<img ng-src="{{coffeeShop.imgUrl}}">
+		</div>
+		
+	</div>
+</section> 

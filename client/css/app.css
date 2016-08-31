@@ -1,0 +1,101 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+main {
+	min-height: 100%;
+	position: relative;
+}
+a {
+	outline: none;
+}
+footer{
+	position: absolute;
+	
+	bottom: 0;
+    width:100%;
+    min-height:60px;    
+    background-color: #222; 
+}	
+
+.shop {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.shop-info {
+	width: 100%;
+}
+
+.shop-info p {
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.shop-img {
+	width: 35%;
+	margin: 0 auto;
+}
+.shop-img img {
+	width: 100%;
+}
+
+.form {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.account {
+	
+	margin: 0 auto;
+}
+footer p {
+	font-size: 25px;
+	color: white;
+	text-align: center;
+
+}
+.menu {
+	display: none;
+	font-size: 30px;
+	color: white;
+}
+
+@media (max-width: 1300px) {
+
+    .shop-img {
+    	width: 40%;
+    }
+}
+ @media (min-width: 560px) and (max-width: 800px) {
+
+    .shop-img {
+    	width: 60%;
+    }
+    
+    footer p {
+    	font-size: 20px;
+    }
+}
+@media (max-width: 560px) {
+	.shop-info p {
+    	font-size: 20px;
+    }
+
+    .shop-img {
+    	width: 100%;
+    }
+    footer p {
+    	font-size: 15px;
+    }
+}
+@media (max-width: 755px) {
+	nav {
+		display: none;
+	}
+	.menu {
+		display: block;
+	}
+}
