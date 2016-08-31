@@ -64,7 +64,7 @@ footer p {
 }
 
 .avatar {
-	float: left;
+	display: inline-block;
 	border-radius: 100%;
 	width: 50px;
 	height: 100%;
@@ -75,10 +75,6 @@ footer p {
     .shop-img {
     	width: 40%;
     }
-    .form {
-	width: 60%;
-	margin: 0 auto;
-}
 }
  @media (min-width: 560px) and (max-width: 800px) {
 
@@ -109,8 +105,4 @@ footer p {
 	.menu {
 		display: block;
 	}
-	.form {
-	width: 80%;
-	margin: 0 auto;
-}
 }
