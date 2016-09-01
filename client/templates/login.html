@@ -1,12 +1,12 @@
-<section class="form">
-  <form name="form" class="form-horizontal">
+<section class="form" ng-controller="AuthLoginCtrl">
+  <form name="form" class="form-horizontal" ng-submit="login()">
     <fieldset>
       <legend>Login form</legend>
 
       <div class="form-group">
         <label class="control-label col-sm-2">Email</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control">
+          <input type="email" class="form-control" ng-model="user.email">
           <p class="hint">Email is
             required</p>
         </div>
@@ -16,7 +16,7 @@
       <div class="form-group">
         <label class="control-label col-sm-2">Password</label>
         <div class="col-sm-10">
-          <input type="password" class="form-control">
+          <input type="password" class="form-control" ng-model="user.password">
           <p class="hint">Password is
             required</p>
         </div>
@@ -29,4 +29,7 @@
       </div>
     </fieldset>
   </form>
+  <article class="alert alert-danger" ng-show="error">
+    <p ng-bind="error"></p>
+  </article>
 <section>

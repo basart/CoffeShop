@@ -1,16 +1,24 @@
 <section class="container">
 	<div class="account">
-		<h1>Hello user ()</h1>
-		<form action="">
+		<div class="row">
+			<div class="col-sm-3">
+				<h1>Hello, {{currentUser.email}} </h1>
+			</div>
+			<div class="col-sm-3 account-avatar">
+				<img ng-src="{{currentUser.avatarUrl}}">
+			</div>
+		</div>
+		<form class="row" action="">
 			<fieldset>
 				<legend>Upload an avatar</legend>
 				<div class="form-group">
-					<input name="photo" type="file" accept="image/*">
+					<label btn btn-default btn-file>
+						<input name="photo" type="file" accept="image/*" >
+					</label>
 				</div>
-				<div class="actions">
-					<label></label>
-					<button>Load</button>
-		    	</div>
+        		<div >
+          			<button class="btn btn-default">Load</button>
+        		</div>
 			</fieldset>
 		</form>
 	</div>

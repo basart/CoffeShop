@@ -1,12 +1,12 @@
 <section class="form">
-  <form name="form" class="form-horizontal">
+  <form name="form" class="form-horizontal" ng-submit="register()">
     <fieldset>
       <legend>Sign up form</legend>
 
       <div class="form-group">
         <label class="control-label col-sm-2">Email</label>
         <div class="col-sm-10">
-          <input name="email" type="text" class="form-control">
+          <input name="email" type="email" class="form-control" ng-model="user.email">
           <p class="hint">Email is
             required</p>
         </div>
@@ -15,7 +15,7 @@
       <div class="form-group">
         <label class="control-label col-sm-2">Password</label>
         <div class="col-sm-10">
-          <input name="password" type="password" class="form-control">
+          <input name="password" type="password" class="form-control" ng-model="user.password">
           <p class="hint">Password is
             required</p>
         </div>
@@ -28,4 +28,7 @@
       </div>
     </fieldset>
   </form>
+  <article class="alert alert-danger" ng-show="error">
+    <p ng-bind="error"></p>
+  </article>
 </section>

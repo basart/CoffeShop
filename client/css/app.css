@@ -5,6 +5,8 @@ html, body {
 main {
 	min-height: 100%;
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 a {
 	outline: none;
@@ -64,10 +66,14 @@ footer p {
 }
 
 .avatar {
-	float: left;
+	
 	border-radius: 100%;
 	width: 50px;
-	height: 100%;
+	height: 50px;
+}
+
+.account-avatar img {
+	width: 100%;
 }
 
 @media (max-width: 1300px) {

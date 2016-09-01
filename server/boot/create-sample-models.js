@@ -12,4 +12,8 @@ module.exports = function(app) {
       console.log('Models created: \n', coffeeShops);
     });
   });
+  var User = app.models.User;
+  User.create({email: 'foo@bar.com', password: 'bar', avatarUrl: '/img/default_avatar.png'}, function(err, user) {
+    console.log(user);
+  });
 };
