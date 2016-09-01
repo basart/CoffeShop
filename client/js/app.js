@@ -1,4 +1,4 @@
-angular.module('coffeeShopApp', ['lbServices','ngRoute', 'ngFileUpload'])
+angular.module('coffeeShopApp', ['lbServices','ngRoute'])
 	.config(function($routeProvider) {
 	$routeProvider
 	.when('/', {
@@ -21,26 +21,5 @@ angular.module('coffeeShopApp', ['lbServices','ngRoute', 'ngFileUpload'])
 		controller: 'SignUpCtrl'
 	})
 	.otherwise({redirectTo: '/'});
-	})
-	.controller('UploadController', function($scope, Upload) {
-  
-		var S3_BUCKET_URL = '/api/Containers/' + yourS3bucketName + '/upload';
-
-		$scope.data = {	
-			files: []
-		};
-
-		$scope.submit = function(data) {
-		    var files = data.files[0];
-		    
-	    Upload.upload({
-		    url: S3_BUCKET_URL,
-		    file: file
-		})
-		.then(function(res) {
-		    $log.debug(res.data.result.files); // log files uploaded
-	    });
-	};
-
-});;
+	});
 	
