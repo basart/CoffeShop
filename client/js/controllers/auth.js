@@ -52,7 +52,7 @@ angular
 			    	})
 				.$promise
 				.then(function() {
-					$location.path('login');
+					$location.path('/login');
 				}, function(err, res) {
 					$scope.error = err.status;
 					$location.path('/signup');

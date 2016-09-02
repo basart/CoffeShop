@@ -1,4 +1,6 @@
-angular.module('coffeeShopApp', ['lbServices','ngRoute'])
+angular.module('coffeeShopApp', ['lbServices','ngRoute','cloudinary',
+  'photoAlbumControllers',
+  'photoAlbumServices'])
 	.config(function($routeProvider) {
 	$routeProvider
 	.when('/', {
@@ -6,7 +8,8 @@ angular.module('coffeeShopApp', ['lbServices','ngRoute'])
 		controller: 'CoffeeShopsCtrl'
 	})
 	.when('/account', {
-		templateUrl: '/templates/account.html'
+		templateUrl: '/templates/account.html',
+		controller: 'photoUploadCtrl'
 	})
 	.when('/login', {
 		templateUrl: '/templates/login.html',
